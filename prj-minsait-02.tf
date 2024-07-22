@@ -56,35 +56,32 @@ resource "azurerm_network_interface" "nic-prj" {
   }
 }
 # Resource Vm
-resource "azurerm_virtual_machine" "vm-prj" {
-  name                  = "vm-${var.prefix}"
+resource "azurerm_linux_virtual_machine" "vm-linux-prj" {
+  name                  = "vm-linux-${var.prefix}"
   location              = azurerm_resource_group.rg-prj.location
   resource_group_name   = azurerm_resource_group.rg-prj.name
   network_interface_ids = [azurerm_network_interface.nic-prj.id]
-  vm_size               = "Standard_B1s"
+  size               = "Standard_B1s"
+  admin_username = "simeia.macedo"
+  admin_password = "Simeia@123"
+  computer_name  = "simeia-server"
+  custom_data    = base64encode(file("C:\\Codes\\prj_teste\\install-docker.sh"))
 
-  storage_image_reference {
+
+  source_image_reference {
     publisher = "Canonical"
     offer     = "0001-com-ubuntu-server-jammy"
     sku       = "22_04-lts-gen2"
     version   = "latest"
   }
-  storage_os_disk {
-    name              = "os-disc-${var.prefix}"
+  os_disk {
+    name              = "os-disc-linux-${var.prefix}"
     caching           = "ReadWrite"
-    create_option     = "FromImage"
-    managed_disk_type = "Standard_LRS"
+    storage_account_type = "Standard_LRS"
   }
-  os_profile {
-    computer_name  = "simeia-server"
-    admin_username = "simeia.macedo"
-    admin_password = "Simeia@123"
-    custom_data    = base64encode(file("install-docker.sh"))
-  }
-  os_profile_linux_config {
 
     disable_password_authentication = false
-  }
+
   tags = {
     environment = "ambiente-de-teste"
   }
