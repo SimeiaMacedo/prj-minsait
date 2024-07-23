@@ -61,11 +61,11 @@ resource "azurerm_linux_virtual_machine" "vm-linux-prj" {
   location              = azurerm_resource_group.rg-prj.location
   resource_group_name   = azurerm_resource_group.rg-prj.name
   network_interface_ids = [azurerm_network_interface.nic-prj.id]
-  size               = "Standard_B1s"
-  admin_username = "simeia.macedo"
-  admin_password = "Simeia@123"
-  computer_name  = "simeia-server"
-  custom_data    = base64encode(file("C:\\Codes\\prj_teste\\install-docker.sh"))
+  size                  = "Standard_B1s"
+  admin_username        = "simeia-macedo"
+  admin_password        = "Simeia@123"
+  computer_name         = "simeia-server"
+  custom_data           = base64encode(file("C:\\Codes\\prj_teste\\install-docker.sh"))
 
 
   source_image_reference {
