@@ -30,7 +30,8 @@ Este projeto utiliza Terraform para provisionar uma máquina virtual na Azure, c
 - terraform apply;
 - Confirme na sua conta Azure se foi criada a VM;
 - Abra o terminal com seu admin_user + IP público criado na Vm + senha, para certificar que a VM está criada e com suas devidas instalações.
-
+- Para confirmar o banco de dados, busque o IP público da VM + a porta do servidor.
+  
 ## Contribuição
 
 Aumento da eficiência de recursos, simplificações e desenvolvimento ágil e continuo.
