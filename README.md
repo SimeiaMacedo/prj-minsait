@@ -17,7 +17,7 @@ Este projeto utiliza Terraform para provisionar um máquina virtual na Azure, co
 - terraform.tfstate:
   Armazenamento o estado da infrainstrutura gerenciada;
 
-## Índice
+## Explicação
 
 1- Uso
 
@@ -30,6 +30,6 @@ Este projeto utiliza Terraform para provisionar um máquina virtual na Azure, co
 - Confirme na sua conta Azure se foi criada a VM;
 - Abra o terminal com seu admin_user e senha para certificar que a VM está criada e com suas devidas instalações.
 
-3- Contribuição
+2- Contribuição
 
 Aumento da eficiência de recursos, simplificações e desenvolvimento ágil e continuo.
