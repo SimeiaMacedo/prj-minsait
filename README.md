@@ -20,7 +20,7 @@ Este projeto utiliza Terraform para provisionar uma máquina virtual na Azure, c
 
 ## Explicação
 
-1- Uso
+  Uso
 
 - Clonar o repositório do Github;
 - Antes de ir para o próximo passo, faça o login do Azure CLI no terminal com o comando az login, em seguida:
