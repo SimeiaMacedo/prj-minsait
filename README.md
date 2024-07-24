@@ -32,4 +32,4 @@ Este projeto utiliza Terraform para provisionar um máquina virtual na Azure, co
 
 3- Contribuição
 
-Aumento da eficiência de recursos, simplioficações e desenvolvimento ágil e continuo.
+Aumento da eficiência de recursos, simplificações e desenvolvimento ágil e continuo.
