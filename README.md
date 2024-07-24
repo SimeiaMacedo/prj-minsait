@@ -1,6 +1,6 @@
 # Projeto minsait - Terraform Azure VM com Docker, Docker compose, Wordpress e MYSQL.
 
-Este projeto utiliza Terraform para provisionar um máquina virtual na Azure, configurada para instalação de docker, docker compose e implantação de containers WordPress e MYSQL na máquina virtual.
+Este projeto utiliza Terraform para provisionar uma máquina virtual na Azure, configurada para instalação de docker, docker compose e implantação de containers WordPress e MYSQL na máquina virtual.
 
 ## Pré-requisitos
 
@@ -10,6 +10,7 @@ Este projeto utiliza Terraform para provisionar um máquina virtual na Azure, co
 - Editor de código (Usado o VS Code, mas fica ao seu critério).
 
 ## Estrutura
+
 - main.tf :
   Script do Terraform, contendo os recursos para a VM, com direcionamentos para baixar Docker, Docker compose e containers WordPress e MYSQL;
 - config.h :
@@ -30,6 +31,6 @@ Este projeto utiliza Terraform para provisionar um máquina virtual na Azure, co
 - Confirme na sua conta Azure se foi criada a VM;
 - Abra o terminal com seu admin_user + IP público criado na Vm + senha, para certificar que a VM está criada e com suas devidas instalações.
 
-2- Contribuição
+## Contribuição
 
 Aumento da eficiência de recursos, simplificações e desenvolvimento ágil e continuo.
