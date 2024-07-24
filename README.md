@@ -15,7 +15,7 @@ Este projeto utiliza Terraform para provisionar um máquina virtual na Azure, co
 - config.h :
   Configurações para a intalação do Docker, Docker compose e criações de containers WordPress e MYSQL;
 - terraform.tfstate:
-  Armazenamento o estado da infrainstrutura gerenciada;
+  Armazenamento do estado da infrainstrutura gerenciada;
 
 ## Explicação
 
