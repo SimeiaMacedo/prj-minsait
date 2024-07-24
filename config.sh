@@ -37,7 +37,7 @@ services:
       - "3306:3306"
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: GAud4mZby8F3SD6P
       MYSQL_DATABASE: wordpress
       MYSQL_USER: simeia-macedo
       MYSQL_PASSWORD: GAud4mZby8F3SD6P
